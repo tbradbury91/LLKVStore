@@ -2,14 +2,14 @@
 A High-Performance Low-Latency In-Memory Key-Value Store
 
 ## Overview
-LLKVStore is a modern C++ in-memory key-value store designed to handle high-throughput, low-latency operations safely in multi-threaded environments. It demonstrates the core skills required in high-frequency trading (HFT) systems, including concurrency, memory optimisation, and reliable data handling.
+LLKVStore is a modern C++ in-memory key-value store designed to handle high-throughput, low-latency operations safely in multi-threaded environments. It demonstrates the core skills required in high-frequency trading (HFT) systems, including concurrency, memory optimisation and reliable data handling.
 
 While LLKVStore doesn’t execute trades itself, it represents the kind of ultra-fast data infrastructure used in trading systems to store live market data, orders, and positions, enabling trading engines to make microsecond-level decisions.
 
 ## Key Features
 - Thread-safe in-memory storage (put, get, remove)
 - Concurrent multi-threaded operations using std::thread and std::shared_mutex
-- Optional Write-Ahead Log (WAL) for durability
+- Write-Ahead Log (WAL) for durability
 - High-performance design optimised for low-latency access
 - Built-in multi-threaded benchmarking to measure insert and retrieve performance
 
@@ -17,7 +17,7 @@ While LLKVStore doesn’t execute trades itself, it represents the kind of ultra
 - KVStore — Public interface for client use
 - KVStoreImpl — Core implementation coordinating Memtable and WAL
 - Memtable — Thread-safe in-memory hash map
-- WriteAheadLog — Optional disk-based log for durability
+- WriteAheadLog — disk-based log for durability
 - utils — Timer and helper utilities for benchmarking
 
 ## Benchmark Example
