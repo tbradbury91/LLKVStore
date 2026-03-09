@@ -38,7 +38,7 @@ Tech Stack
 C++20
 std::thread, std::mutex, std::shared_mutex for concurrency
 std::unordered_map for in-memory storage
-Optional Write-Ahead Log (fstream)
+Write-Ahead Log enabled (fstream)
 Benchmarking via std::chrono
 
 ## Real-World Relevance
